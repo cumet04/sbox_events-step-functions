@@ -11,6 +11,7 @@ services:
     init: true
     volumes:
       - ..:/workspace:cached
+      - $HOME/.aws:/home/vscode/.aws
     command: sleep infinity
 
 volumes:
