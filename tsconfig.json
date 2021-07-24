@@ -2,10 +2,14 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "build"
+    "outDir": "cdk.out/build",
+
+    // options for cdk
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
   },
   "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ]
+    "lib/**/*.ts",
+  ],
 }
